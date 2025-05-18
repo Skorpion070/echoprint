@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Responsive design styles */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flex-item {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 20px;
+        }
+
+        .centered-content {
+            position: relative;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            p {
+                font-size: 36px !important;
+            }
+            
+            img {
+                width: 500px !important;
+                height: 200px !important;
+            }
+
+            header img {
+                width: 150px !important;
+                height: 150px !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            p {
+                font-size: 24px !important;
+            }
+
+            img {
+                width: 300px !important;
+                height: 150px !important;
+            }
+
+            header img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> <img src="images/echoprint-logo.png" width="250" height="250"></header>
+    <img src="images/Snail Articulated.webp" style="width: 700px; height: 300px;">
+    <p style="font-size: 48px;">Slug</p>
+    <div style="display: flex; align-items: center;">
+        <div>
+            <img src="images/Lizard Articulated.jpg" style="width: 700px; height: 300px;">
+            <p style="font-size: 48px;">Lizard</p>
+            <img src="images/Axoltol Articulated.jpg" style="width: 700px; height: 300px;">
+            <p style="font-size: 48px;">Axolotl</p>
+            <img src="images/Snake Articulated.webp" style="width: 700px; height: 300px; position: absolute; top: 410px; left: 50%; transform: translateX(-50%);">
+            <p style="font-size: 48px; position: absolute; top: 670px; left: 50%; transform: translateX(-50%);">Snake</p>
+         </div>
+        <div>
+            <img src="images/Shark articulated.webp" style="width: 700px; height: 300px; position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+            <p style="font-size: 48px; position: absolute; top: 310px; left: 50%; transform: translateX(-50%);">Shark</p>
+        </div>
+    </div>
+</body>
+</html>
